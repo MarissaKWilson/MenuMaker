@@ -9,12 +9,53 @@
 		<name>menumaker</name>
   	<url>https://github.com/MarissaKWilson</url>
 	</organization>
+
   <dependencies>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+  
+    <!-- JPA & Spring -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+      <version>1.5.10.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate.javax.persistence</groupId>
+      <artifactId>hibernate-jpa-2.1-api</artifactId>
+      <version>1.0.2.Final</version>
+    </dependency>
+
+      <dependency>
+          <groupId>com.h2database</groupId>
+          <artifactId>h2</artifactId>
+      </dependency>
+
+
+      <!-- pdf handling -->
+      <dependency>
+          <groupId>org.apache.pdfbox</groupId>
+          <artifactId>pdfbox</artifactId>
+          <version>2.0.4</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.pdfbox</groupId>
+          <artifactId>fontbox</artifactId>
+          <version>2.0.4</version>
+      </dependency>
+
+      <dependency>
+          <groupId>commons-logging</groupId>
+          <artifactId>commons-logging</artifactId>
+          <version>1.2</version>
+      </dependency>
+
   </dependencies>
 </project>

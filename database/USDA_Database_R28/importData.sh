@@ -5,7 +5,7 @@ DB="fooddb"
 psql -d ${DB} -f schema.sql
 
 
-psql -d ${POSTGRES_DB} -c "COPY src_cd FROM 'SRC_CD.txt' (FORMAT('csv'), DELIMITER('^'), QUOTE('~'))"
+psql -d ${POSTGRES_DB} -c "COPY sources FROM 'SRC_CD.txt' (FORMAT('csv'), DELIMITER('^'), QUOTE('~'))"
 psql -d ${POSTGRES_DB} -c "COPY derive_code FROM 'DERIV_CD.txt' (FORMAT('csv'), DELIMITER('^'), QUOTE('~'))"
 psql -d ${POSTGRES_DB} -c "COPY data_src FROM 'DATA_SRC.txt' (FORMAT('csv'), DELIMITER('^'), QUOTE('~'))"
 psql -d ${POSTGRES_DB} -c "COPY footnote FROM 'FOOTNOTE.txt' (FORMAT('csv'), DELIMITER('^'), QUOTE('~'))"
